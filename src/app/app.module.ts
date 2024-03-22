@@ -7,10 +7,10 @@ import { AnotherPagePage } from './another-page/another-page.page';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedFolder } from './shared-folder/custom-component';
-import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent,AnotherPagePage, SharedFolder],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

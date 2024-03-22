@@ -14,25 +14,12 @@
   </ion-header>
 
   <div id="container">
-    <strong>ready to create app?<br></strong>
-
-    <div *ngFor="let university of universities;">
-      {{university.name}}
-    </div>
-    
-      <div *ngFor="let university of universities; let i = index;">
-        <div *ngIf="i <  10">
-          {{university.name}}
-          </div>
-      </div>
-
-    
-    <!-- <ion-button (click)="clickAuthenticate()">Authenticate</ion-button><br>
+    <strong>SELECT BUTTON<br></strong>
+    <ion-button (click)="clickAuthenticate()">Authenticate</ion-button><br>
     <ion-button (click)="clickUnauthenticate()">Unauthenticate</ion-button><br>
     <ion-button (click)="showObject()">Show Object</ion-button><br>
     <div *ngIf="isLoading"> {{loadingText}} </div>
     <div *ngIf="isHide"><p>{{myArray}}</p></div>
-    <ion-button (click)="addObject()">Add to Object</ion-button><br>-->
-    
+    <ion-button (click)="addObject()">Add to Object</ion-button><br>
   </div>
 </ion-content>
