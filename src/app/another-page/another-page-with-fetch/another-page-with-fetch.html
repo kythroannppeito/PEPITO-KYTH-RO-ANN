@@ -1,0 +1,10 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>TEST</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  This is {{test}} new number is 
+  <div> {{number}} </div>
+  <div *ngIf="isLoading">{{loadingText}}</div>
+  
+  <ion-button (click)="incrementNo()">INCREMENT</ion-button>
