@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <strong>Sign Up</strong><br>
+    <p>Create an account</p><br>
+    <div class="input-container">
+      <input type="email" class="user-white" [(ngModel)]="email" placeholder="Email">
+      <ion-icon color="medium" name="mail" class="input-icon"></ion-icon>
+    </div><br><br>
+    <div class="input-container">
+      <input type="password" class="user-white" [(ngModel)]="password" placeholder="Password">
+      <ion-icon color="medium" name="lock-closed" class="input-icon"></ion-icon>
+    </div><br><br>
+    <div class="input-container">
+      <input type="password" class="user-white" [(ngModel)]="retypePassword" placeholder="Retype Password">
+      <ion-icon color="medium" name="lock-closed" class="input-icon"></ion-icon>
+    </div><br><br>
+    <ion-button style=" width: calc(100% - 70px);" shape="round" color="primary"  (click)="signUp()">Sign Up</ion-button>
+  </div>
+
+</ion-content>
