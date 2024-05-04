@@ -1,51 +1,11 @@
-ion-header.ion-no-border {
-  padding: 20px;
+.container {
+  padding: 16px;
 }
 
-ion-item {
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
+.content {
+  margin-bottom: 16px;
 }
 
-.avatar {
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-}
-
-ion-label h3 {
-  margin: 0;
-  font-size: 1.2em;
-}
-
-ion-label h2 {
-  margin: 5px 0;
-  font-size: 1.5em;
-}
-
-ion-label p {
-  margin: 5px 0;
-}
-
-p {
-  margin: 10px 0;
-}
-
-strong {
-  font-weight: bold;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-p strong {
-  display: block;
-  margin-bottom: 5px;
+ion-button {
+  margin-top: 16px;
 }

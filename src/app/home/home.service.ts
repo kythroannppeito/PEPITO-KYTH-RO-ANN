@@ -40,6 +40,8 @@ export class HomeService {
 
       title : user.title,
       date: user.date,
+      actor: user.actor,
+      genre: user.genre,
 
       });
       console.log("Doc written with ID:", docRefM1);
@@ -54,7 +56,7 @@ async tryUpdate(user:User) {
 
   try{
     const docRef = doc(firestore, "users", user.id);
-    await updateDoc(docRef, {title: user.title, date: user.date, });
+    await updateDoc(docRef, {title: user.title, date: user.date, actor: user.actor, genre: user.genre});
   }catch (e){
     console.error("error adding document:", e);
   }
@@ -81,6 +83,6 @@ await alert.present();
 }
 
   edit(user: iUser){
-this.users = user;
+   this.users = user;
   }
 }

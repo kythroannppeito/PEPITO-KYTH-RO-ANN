@@ -32,6 +32,8 @@ sync(users:iUser[]){
       this.users.id = user.id;
       this.users.title = user.title;
       this.users.date = user.date;
+      this.users.actor = user.actor;
+      this.users.genre = user.genre;
     }
   });
 

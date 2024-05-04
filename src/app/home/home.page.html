@@ -1,21 +1,23 @@
-<div class="container">
+<ion-content>
+  <div class="container">
+    <h1>Series</h1> 
 
-  <h1>Series</h1> 
+    <div class="content" *ngFor="let user of UserList">
+      <div class="content-box">
+        
+        <h2>Title: {{ user.title }}</h2>
+        <h2>Date: {{ user.date }}</h2>
+        <h2>Actor: {{ user.actor }}</h2>
+        <h2>Genre: {{ user.genre}}</h2>
 
- <div class="content" *ngFor="let user of UserList">
-    
-  <div class="content-box">
+        
+      </div>
+      <div class="btn">
+        <ion-button (click)="update(user)">Update</ion-button>
+        <ion-button (click)="delete(user)">Delete</ion-button>
+      </div>
+    </div>
 
-    <h2> Title :  {{ user.title}}</h2>
-    <h2> date :  {{ user.date}}</h2>
- 
-
+    <ion-button (click)="create()">Create</ion-button>
   </div>
-  <div class="btn">
-    <ion-button (click)="update(user)">update</ion-button>
-    <ion-button (click)="delete(user)">delete</ion-button>
-
-  </div>
- </div>
- <ion-button (click)="create()">create</ion-button>
-</div>
+</ion-content>
